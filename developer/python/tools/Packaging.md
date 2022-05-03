@@ -11,5 +11,10 @@ python -m pip install --upgrade setuptools wheel
 python setup.py sdist bdist_wheel
 python -m pip install --upgrade twine
 python -m twine upload --repository testpypi dist/*
+```
+
+### Validador
+
+```bash
 pip install -i https://test.pypi.org/simple/ kimera-<NAME>
 ```
